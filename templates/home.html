@@ -1,0 +1,371 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+  rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    
+<link rel="stylesheet" href="path/to/fontawesome.min.css">
+
+</head>
+<!-- <form action="/get_pdf"  method="post" , enctype="multipart/form-data">
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-600">Please Upload your PDF file below: </label>
+            <input type="file" id="user_file" name="user_file" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+
+
+            <input type="submit">
+      </div>
+    </div>
+          </form> -->
+          <div>
+
+          <div class="text-center">
+            <form action="/payment_cash"  method="post" , enctype="multipart/form-data">
+              <br>
+            <h1>BukDio</h1>
+
+            <p class="lead">Your audio Book  Genetator is here </p>
+
+            <input value="Generate Your Audio book" type="submit" class="btn btn-primary btn-lg active">
+
+          </form>
+          <div class="component">
+            <ul class="align">
+              <!-- Book 1 -->
+              <li>
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="https://kbimages1-a.akamaihd.net/ddf8d53d-7df5-4560-8fbd-43915f4f6a03/1200/1200/False/rich-dad-poor-dad-24.jpg" alt="" width="100%" height="100%">
+                      <span class="ribbon bestseller">Nº1</span>
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <a class="btn" href="https://drive.google.com/file/d/1K0gvocXkdSDAo3zv14Y2_N6ByvdeUfyA/view?usp=sharing">Download</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Rich Dad Poor Dad</h1>
+                    <span>By Robert Kiyosaki and Sharon Lechter
+                    </span>
+                    <p>So if you're looking for help in teaching your kids about money, I would pass on “Rich Dad Poor Dad.” There are more suitable books for you. If you are interested in buying and selling real estate, however, this would be a good book to start with. Dave Kinzer is a music teacher and a financial coach in Springfield.</p>
+                  </figcaption>
+                </figure>
+              </li>  
+              <!-- Book 2 -->
+              <li>
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="https://harekrishnabooks.com/wp-content/uploads/2019/06/Nepali-Bhagavad-gita-400x674.jpg" alt="" width="100%" height="100%">
+                      <span class="ribbon new">NEW</span>
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <a class="btn" href="https://drive.google.com/file/d/15Auv1AjYU5RCl9dDDAlx_uwFuQhgRV0Z/view?usp=sharing">Download</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Bhagbhat Gita</h1>
+                    <span>By Vyasa</span>
+                    <p>The Hindu religion is filled with important texts that have influenced thought across the world, but the Bhagavad Gita is regarded by many as the single most influential philosophical text shaping spiritual thought and life</p>
+                  </figcaption>
+                </figure>
+              </li>  
+              <!-- Book 3 -->
+              <li>
+                <figure class='book'>       
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="https://images-na.ssl-images-amazon.com/images/I/71sBtM3Yi5L.jpg" alt="" width="100%" height="100%">
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <a class="btn" href="https://drive.google.com/file/d/1fnZlvmx3Kg8DYvtfyuNEAaMhU3HyZH56/view?usp=sharing">Download</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Power of your Subconscious Mind</h1>
+                    <span>By Joseph Murphy</span>
+                    <p>This book can bring to your notice the innate power that the sub-conscious holds. We have some traits which seem like habits, but in reality these are those traits which are directly controlled by the sub-conscious mind, vis-à-vis your habits or your routine can be changed if you can control and direct your sub-conscious mind positively</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class='book'>       
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="http://prodimage.images-bn.com/pimages/2940013033078_p0_v1_s1200x630.jpg" alt="" width="100%" height="100%">
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <a class="btn" href="https://drive.google.com/file/d/1qDn5RevWb3Qet5VOe6_pg37V3HsMog-Y/view?usp=sharing">Download</a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Gitanjali</h1>
+                    <span>By Rabindranath Tagore</span>
+                    <p>Gitanjali (Bengali: গীতাঞ্জলি, lit. ''Song offering'') is a collection of poems by the Bengali poet Rabindranath Tagore. Tagore received the Nobel Prize for Literature</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>  
+          </div>
+
+
+          </div>
+          <br><br><br>
+          <div class="text-center">
+            <h2 >
+       --------------- Our Pricing--------------   </h2>
+              </div>
+          <div class="promos" id="price">  
+            <div class="promo">
+              <div class="deal">
+                <span>Premium</span>
+                <span>This is really a good deal!</span>
+              </div>
+              <span class="price">499/-</span>
+              <ul class="features">
+                <li> Get unlimted Audiobook</li>
+                <li>Live support</li>
+                <li>Get api</li>   
+              </ul>
+              <button onclick="location.href='/payment_cash_premium'" >Get it</button>
+            </div>
+            <div class="promo scale">
+              <div class="deal">
+                <span>Plus</span>
+                <span>This is really a good deal!</span>
+              </div>
+              <span class="price">349/-</span>
+              <ul class="features">
+                <li>1000 Download in Month</li>
+                <li>live support</li>
+                <li>no Api</li>   
+              </ul>
+              <button onclick="location.href='/payment_cash_plus'" >Get it</button>
+            </div>
+            <div class="promo">
+              <div class="deal">
+                <span>Basic</span>
+                <span>Basic membership</span>
+              </div>
+              <span class="price">199/-</span>
+              <ul class="features">
+                <li>500 Downloads </li>
+                <li>no Live support</li>
+                <li>no api</li>   
+              </ul>
+              <button onclick="location.href='/payment_cash_basic'" >Get it</button>
+              
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+            </div>
+           
+            </div>
+
+            <div>
+              <footer class="text-center text-lg-start bg-dark text-muted">
+                <!-- Section: Social media -->
+                <section
+                  class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+                >
+                  <!-- Left -->
+                  <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                  </div>
+                  <!-- Left -->
+              
+                  <!-- Right -->
+                  <div>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <!-- Right -->
+                </section>
+                <!-- Section: Social media -->
+              
+                <!-- Section: Links  -->
+                <section class="">
+                  <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                      <!-- Grid column -->
+                      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                          <i class="fas fa-gem me-3"></i>BukDio
+                        </h6>
+                        <p>
+                          We are a Ai based company that can generate unlimed audiobook from any pdf
+                        </p>
+                      </div>
+                      <!-- Grid column -->
+              
+                      <!-- Grid column -->
+                      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                          Products
+                        </h6>
+                        <p>
+                          <a href="/upload" class="text-reset">audio book </a>
+                        </p>
+                        <p>
+                          <a href="/upload" class="text-reset">API</a>
+                        </p>
+                       
+                      </div>
+                      <!-- Grid column -->
+              
+                      <!-- Grid column -->
+                      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                          Useful links
+                        </h6>
+                        <p>
+                          <a href="/payment_cash_499" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                          <a href="/upload" class="text-reset">Orders</a>
+                        </p>
+                        
+                      </div>
+                      <!-- Grid column -->
+              
+                      <!-- Grid column -->
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                          Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i>Bangalore,India</p>
+                        <p>
+                          <i class="fas fa-envelope me-3"></i>
+                          bukdio@.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 9091203984</p>
+                        <p><i class="fas fa-print me-3"></i> + 6638392219</p>
+                      </div>
+                      <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                  </div>
+                </section>
+                <!-- Section: Links  -->
+              
+                <!-- Copyright -->
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                  © 2022 Copyright:
+                  <a class="text-reset fw-bold" href="https://mdbootstrap.com/">BukDio</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+            </div>
+
+{% endblock %}
+
+

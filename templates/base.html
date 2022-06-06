@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books to AudioBook.</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/sub.css') }}">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/LVDYC6VR242VUDYTWXZRBKSVHI.jpg" width="100" height="150" alt="">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/payment_cash">Download</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#price">Pricing</a>
+        </li>
+      </ul>
+     
+    </div>
+  </nav>
+{% block body %} 
+
+{% endblock %}
+
+</body>
+
+</html>
